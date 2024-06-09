@@ -7,11 +7,11 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Fast Food API",
+        title="Univer API",
         default_version="v1",
         description="""
       """,
-        terms_of_service="https://github.com/ErlanDjamankulov/food",
+        terms_of_service="https://github.com/ErlanDjamankulov/University",
         license=openapi.License(name="↑ GitHub ↑"),
     ),
     public=True,

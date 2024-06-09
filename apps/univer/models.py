@@ -29,7 +29,7 @@ class Professor(models.Model):
     )
 
     def __str__(self):
-        return self.user
+        return self.bio
 
     class Meta:
         verbose_name = _('Профессор')
@@ -47,9 +47,11 @@ class Student(models.Model):
         _("Дата окончания учебы"),
         help_text=_("Дата и время окончания учебы"),
     )
-
+    bio = models.CharField(
+        _('ФИО'), max_length=64, help_text=_('Введите полное имя'), unique=True
+    )
     def __str__(self):
-        return self.user
+        return self.bio
 
     class Meta:
         verbose_name = _('Студент')

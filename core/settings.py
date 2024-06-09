@@ -255,6 +255,5 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
-ACCOUNT_FORMS = {'signup': 'apps.univer.forms.MyCustomSignupForm'}
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 MODELTRANSLATION_LANGUAGES = ('ru','en','ky')
